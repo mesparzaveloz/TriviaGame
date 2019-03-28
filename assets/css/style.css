@@ -1,0 +1,137 @@
+body {
+    font-family: 'SunriseInternational', 'Branding-Medium', sans-serif;
+    font-size: 20px;
+    background-color: darkgrey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/3_word_quotes.jpg");
+}
+h1 {
+    float: left;
+    font-family: Book Antiqua;
+    font-size: 86px;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    color: rgb(139, 199, 127);
+    text-shadow: black -2px 3px 1px;
+}
+section {
+	color: antiquewhite;
+	padding: 4%;
+	margin: 0 7% 3% 7%;
+	position: relative;  
+    top: -18px;  
+    line-height: 35px;
+    clear: both;
+    color: rgb(4, 41, 143);
+}
+.sectionGreen {
+    background-color: rgb(139, 199, 127);
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+#qText {
+    position: relative;
+}
+.answer {
+	cursor: pointer;
+	margin: 5px;
+}
+#result {
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #193441;
+    color: white;
+    padding: 8%;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 42px;
+    background-repeat: no-repeat;
+    background-position: right top; 
+}
+#result.correctResult {
+    background-image: url("../images/checkmark.gif");
+     background-size: 250px 250px;
+}
+#result.wrongResult {
+    background-image: url("../images/fail.gif");
+     background-size: 230px 230px;
+}
+#result.timesUp {
+    background-image: url("../images/walking-clock.gif");
+     background-size: 230px 230px;
+}
+#result .gameOverText {
+    display: block;
+    font-size: smaller;
+    position: absolute;
+    bottom: 30px;
+    width: 85%;
+}
+button#newGame {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: #0f0103;
+    border-color: rgb(41, 40, 40);
+    border-radius: 7px;
+    color: rgb(139, 199, 127);
+    opacity: .75;
+}
+.scoreboard {
+    float: left;
+    margin: 2%;
+    font-size: 20px;
+    background-color: #c5bbac;
+    color: #0c1d02;
+    width: 20%;
+    padding: 15px 6px;
+    height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: .85;
+}
+#score {
+    font-size: small;
+    padding-top: 8px;
+}
+#choices {
+    display: none;
+}
+#choices ol {
+    position: relative;
+}
+button {    
+    display: block;
+    margin: auto;
+    padding: 2%;
+    font-size: 48px;
+    font-family: Book Antiqua;
+    margin-top: 4%;
+    background-color: #0f0103;
+    border-color: rgb(41, 40, 40);
+    border-radius: 7px;
+    color: rgb(139, 199, 127);
+    opacity: .75;
+}
+
+@media screen and (max-width: 750px) {
+    #timer {font-size: 12px;}
+    h1 {font-size: 65px;}
+    section {top: 0;}
+}
+@media screen and (max-width: 550px) {
+    #score {clear: both;}
+    .scoreboard {width: 35%;}
+}
